@@ -11,7 +11,7 @@ namespace AreaCalculator
         /// <returns>Geometric figure depending on centimetres</returns>
         public static IShape CreateShape(params double[] sides)
         {
-            var factory = FactoryCreator.CreateFactory(4);
+            var factory = FactoryCreator.CreateFactory(sides);
             return factory.GetShape();
         }
     }

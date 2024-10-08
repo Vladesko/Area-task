@@ -79,10 +79,8 @@ namespace AreaCalculator.Domain
                 a + b <= c ||
                 a + c <= b ||
                 b + c <= a)
-            {
-                Console.WriteLine("Недопустимые значения сторон");
                 return false;
-            }
+
             return true;
         }
     }
